@@ -262,6 +262,11 @@
 
 
 /********************* 4. 동영상 영역 *********************/
+.video-area{
+    position: relative;
+    width: 100%;
+}
+
 #video h3{
     text-align: center;
     font-size: 7.5rem;
@@ -276,19 +281,38 @@
     font-weight: normal;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
-    padding: 30px;
+    padding-top: 55px;
 }
 
 /* 동영상 셋팅 */
 .video-box video{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 47%;
     transform: translate(-50%, -50%);
     width: 90vw;
     object-fit: cover;
     overflow: hidden;
 }
+
+.article1 img{
+    position: absolute;
+    width: 450px;
+    top: 10px;
+    left: 1300px;
+}
+.article2 img{
+    position: absolute;
+    width: 400px;
+    top: 10px;
+    left: 128px;
+}
+/* .article3 img{
+    position: absolute;
+    width: 500px;
+    top: 10px;
+    left: 10px;
+} */
 
 /********************** 5. 하단 영역 **********************/
 
