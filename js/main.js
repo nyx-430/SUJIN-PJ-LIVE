@@ -16,27 +16,17 @@ setTimeout(() => {
 
 // 슬라이드 배너 이벤트 ////////////
 const slide = document.querySelector(".slider");
-// console.log(slide.querySelectorAll("li"));
 
 function goSlide() {
-  // 먼저 왼쪽으로 이동하기
   slide.style.left = "-100%";
   slide.style.transition = ".6s ease-in-out";
 
   // 이동하는 시간 0.7초간 기다림!
   setTimeout(() => {
-    // 맨 앞 li 맨 뒤로 이동
     slide.appendChild(slide.querySelectorAll("li")[0]);
-    // 슬라이드 left 값이 -100% 이므로 left값을 0으로 변경
     slide.style.left = "0";
-    // left 트랜지션 없애기
     slide.style.transition = "none";
   }, 700);
-
-  // 슬라이드 버튼
-
-
-
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
 
@@ -72,7 +62,7 @@ cursorSet.forEach(ele=>{
   };
 }); /// forEach ///
 
-// 햄버거 버튼 클릭으로 메뉴 열고 닫기
+// 햄버거 버튼 클릭으로 메뉴 열고 닫기 ////////////
 const menuBtn=document.querySelector('.hambtn');
 const menuBox=document.querySelector('.menu-box');
 
@@ -85,8 +75,6 @@ function showmenu(){
   setTimeout(() => {
     menuBox.style.display=
     this.classList.contains('on')?'block':'none';
-    // 클래스 on이 들어간 경우 block으로 보이게 함!
-    // 반대인 경우는 none으로 숨김기
   }, 300);
 }
 
@@ -97,10 +85,9 @@ page.forEach((ele,idx)=>{
 })
 console.log(pagePos);
 
-
 // 휠 이벤트에 따라 페이지 넘기기
 
-// 페이지번호 
+// 페이지 번호 
 let pgNum = 0;
 
 // 광스크롤 금지
