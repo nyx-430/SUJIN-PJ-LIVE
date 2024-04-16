@@ -262,6 +262,9 @@
 
 
 /********************* 4. 동영상 영역 *********************/
+#video{
+    height: 75vh;
+}
 .video-area{
     position: relative;
     width: 100%;
@@ -285,14 +288,17 @@
 }
 
 /* 동영상 셋팅 */
+.video-box{
+    height: 150vh;
+    background-color: #f1eee9;
+}
 .video-box video{
-    position: absolute;
-    top: 50%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
+    display: block;
+    width: 90vw;    
+    height: 90vh;
     object-fit: cover;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .article1 img{
@@ -300,25 +306,13 @@
     width: 450px;
     top: 10px;
     left: 1300px;
-    transition: .3s all linear;
-    animation: fadeIn 3s ease-in-out;
 }
 .article2 img{
     position: absolute;
     width: 400px;
     top: 10px;
     left: 128px;
-    transition: .3s all linear;
-    animation: fadeIn 3s ease-in-out;
 }
 
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 /********************** 5. 하단 영역 **********************/
 
