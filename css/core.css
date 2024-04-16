@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* 공통 클래스 CSS - core.css */
+/* 공통 셋팅을 위한 클래스 + 웹폰트 */
+
+/* 웹폰트 CDN */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap&family=Noto+Sans+KR:wght@100..900&display=swap"&family=Noto+Sans+KR:wght@500&display=swap&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* 
+    0. 메뉴 등 일반체
+    font-family: 'Noto Sans KR', sans-serif;
+
+    1. 배너 타이틀 폰트
+    font-family: "Archivo Black", sans-serif;
+
+    2. 배너 링크 폰트
+    font-family: "Titillium Web", sans-serif;
+*/
+
+/* 설명 숨기기 클래스 */
+.ir{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/**************** 공통 클래스 ****************/
+html{
+    scroll-behavior: smooth;
+}
+
+/* 중앙속 박스 */
+.inbox{
+    /* 블록박스 중앙정렬 */
+    margin: 0 auto;
+}
+
+/* 스티키 적용박스 */
+.stk-page{
+    position: sticky;
+    top: 100px;
+}
+
+/* 상단 메인 로고 */
+.main-logo{
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-size: 3.3rem;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+/* 햄버거 버튼 */
+.hambtn{
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+}
+
+/* 햄버거바 공통 */
+.hambtn span{
+    position: absolute;
+    height: 35px;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+/* 1번 바 */
+.hambtn span:nth-child(1){
+    width: 100%;
+    top: 0px;
+    transition: top .3s .3s, transform .3s;
+}
+/* 2번 바 */
+.hambtn span:nth-child(2){
+    width: 60%;
+    top: 90px;
+    left: 35%;
+    transition: .1s .3s;
+}
+/* 3번 바 */
+.hambtn span:nth-child(3){
+    width: 100%;
+    top: 190px;
+    transition: top .3s .3s, transform .3s;
+}
+
+/* 햄버거 버튼에 클래스 on */
+/* 1번 바 */
+.hambtn.on span:nth-child(1){
+    top: 100px;
+    transform: rotate(45deg);
+    transition: top .3s, transform .3s .3s;
+}
+/* 2번 바 */
+.hambtn.on span:nth-child(2){
+    top: 100px;
+    width: 0%;
+    left: 50%;
+    transition: .1s .3s;
+}
+/* 3번 바 */
+.hambtn.on span:nth-child(3){
+    top: 100px;
+    transform: rotate(-45deg);
+    transition: top .3s, transform .3s .3s;
+}
+
+.mbtn{
+    display: flex;
+    transform: scale(0.07);
+    margin-top: -4%;
+    margin-left: 83%;
+    height: 225px;
+}
+
+/* 마우스커서 */
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* background-color: #144835; */
+    background: url(../images/check1.jpg) no-repeat top/cover;
+    transition: .4s ease-out;
+    z-index: 999;
+    /* 포인터 이벤트 없애기(아래쪽 클릭) */
+    pointer-events: none;
+}
+.cursor.check2{
+    background-image: url(../images/check2.jpg);
+}
+.cursor.check3{
+    background-image: url(../images/check3.jpg);
+}
+.cursor.check4{
+    background-image: url(../images/check4.png);
+}

@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 공통 모듈 CSS - common.css */
+/* 공유 기능 요소 셋팅 */
+
+body{
+    overflow: hidden;
+}
+
+/********************* 1. 상단 영역 *********************/
+/* 상단영역 - 고정 */
+#header{
+    position: fixed;
+    width: 100%;
+    background-color: #f1eee9;
+    z-index: 999;
+}
+
+.top-area{
+    height: 100px;
+    outline: 1px solid #e7e7e7;
+}
+
+/* GNB 메뉴 */
+.gnb .menu-box{
+    padding: 90px;
+    height: 100vh;
+    background-color: #f1eee9;
+    display: none;
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+
+/* GNB 카테고리 */
+.gnb span{
+    text-decoration: none;
+    color: #000;
+    font-size: 6rem;
+    line-height: 2;
+    font-weight: bold;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+/* 서브메뉴 */
+.smenu a{
+    display: none;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 4rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.gnb span:hover{
+    color: #144835;
+}
+.smenu a:hover{
+    color: #144835;
+}
+
+.menu-nav1:hover .smenu>ol>li>a{
+    display: block;
+}
+.menu-nav2:hover .smenu>ol>li>a{
+    display: block;
+}
+.menu-nav3:hover .smenu>ol>li>a{
+    display: block;
+}
+.menu-nav4:hover .smenu>ol>li>a{
+    display: block;
+}
+
+/********************* 2. 인트로 영역 *********************/
+#intro-area{
+    width: 100%;
+    background-color: #f1eee9;
+}
+
+/* 인트로 동영상 */
+.intro-box{
+    width: 100%;
+}
+
+/********************* 3. 슬라이드 배너 영역 *********************/
+#ban-area{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1eee9;
+}
+
+
+/********************* 4. 스크롤 배너 영역 *********************/
+/* 4. 스크롤 배너 파트 */
+.scroll-area{
+    width: 100%;
+    height: 100vh;
+}
+
+#scroll1{
+    background-color: #f1eee9;
+}
+
+/********************* 5. 동영상 영역 *********************/
+
+/* 클립 동영상 */
+.video-area{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    margin: 30px;
+    padding: 30px;
+    background-color: #f1eee9;
+}
+
+/********************** 6. 하단 영역 **********************/
+#footer{
+    position: relative;
+    height: 300px;
+    padding: 40px;
+    background: #144835;
+}
+
+#footer-area{
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+.footer-menu{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+/* STORE 타이틀 */
+#footer-area h3{
+    font-size: 1.6rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#footer-area ul,ol{
+    display: flex;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#footer-area ul li a{
+    color: #fff;
+    margin-right: 30px;
+}
+
+#footer-area ol li{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#footer-area p{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* 하단 로고 */
+.footer-logo{
+    display: flex;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 30px;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+}
