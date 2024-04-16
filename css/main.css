@@ -300,19 +300,25 @@
     width: 450px;
     top: 10px;
     left: 1300px;
+    transition: .3s all linear;
+    animation: fadeIn 3s ease-in-out;
 }
 .article2 img{
     position: absolute;
     width: 400px;
     top: 10px;
     left: 128px;
+    transition: .3s all linear;
+    animation: fadeIn 3s ease-in-out;
 }
-/* .article3 img{
-    position: absolute;
-    width: 500px;
-    top: 10px;
-    left: 10px;
-} */
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /********************** 5. 하단 영역 **********************/
 
